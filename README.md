@@ -1,4 +1,6 @@
-# Modals with form validation
+# Modals with form validation (Vue.js 2)
+## Demo:
+https://redbignow.github.io/Modals-with-form-validation/dist/index.html
 
 ## Project setup
 ```
