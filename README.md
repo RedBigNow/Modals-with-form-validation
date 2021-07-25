@@ -1,4 +1,4 @@
-# vue-cli
+# Modals with form validation
 
 ## Project setup
 ```
