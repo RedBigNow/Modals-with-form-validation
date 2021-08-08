@@ -93,4 +93,13 @@ export default {
 .modal-body {
     text-align: center;
 }
+
+.modal-bottom {
+    padding-top: 40px;
+}
+
+a.another-modal {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
 </style>
