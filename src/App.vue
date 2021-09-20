@@ -21,11 +21,25 @@
         <div class="wrapper-content">
             <section>
                 <div class="container">
+
+                    <div class="demo">
+                        <h1 class="title">В этом приложении:</h1>
+                        <ul class="func-list">
+                            <li>Переиспользование компонентов;</li>
+                            <li>Валидация полей;</li>
+                            <li>Отработка методов при клике вне области элемента;</li>
+                            <li>Отслеживание клавиш;</li>
+                            <li>Отправка данных с форм на почту;</li>
+                            <li>Отправка данных с форм в телеграмм канал;</li>
+                            <li>В демо данные уходят в консоль!</li>
+                        </ul>
+                    </div>
+                    
                     
                     <div class="modal__btn-list">
-                        <button class="btn btnPrimary" @click="modalFirst = !modalFirst">Show first modal with content</button>
-                        <button class="btn btnPrimary" @click="modalSecond.show = !modalSecond.show">Show modal with form</button>
-                        <button class="btn btnPrimary" @click="modalValidate = !modalValidate">Show modal with form + validate</button>
+                        <button class="btn btnPrimary" @click="modalFirst = !modalFirst">Modal with content</button>
+                        <button class="btn btnPrimary" @click="modalSecond.show = !modalSecond.show">Modal with form</button>
+                        <button class="btn btnPrimary" @click="modalValidate = !modalValidate">Modal with form + validate</button>
                     </div>
 
                     <!-- first modal -->
@@ -116,12 +130,28 @@ export default {
 </script>
 
 <style lang="scss">
+.demo {
+    text-align: center;
+}
+
+ul.func-list {
+    margin-bottom: 30px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}
+
 .wrapper-content {
     padding-top: 80px;
 }
 
 .modal__btn-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    .btn {
+        margin: 0 20px;
+    }
 }
 </style>
